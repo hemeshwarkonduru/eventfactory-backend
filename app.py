@@ -14,7 +14,7 @@ migrate = Migrate(app, db)
 CORS(app, support_credentials=True)
 
 #app.config['SQLALCHEMY_DATABASE_URI']='sqlite:///data.db'
-app.config['SQLALCHEMY_DATABASE_URI']='postgresql://gxjfdchnmhuirn:ea19d6889c206194deea9dacb409fc57a2a1d265e3ce0ba669caff392485ebd5@ec2-3-219-19-205.compute-1.amazonaws.com:5432/dd705kk5bnt131'
+app.config['SQLALCHEMY_DATABASE_URI']=''
 
 api=Api(app)
 db.init_app(app)
